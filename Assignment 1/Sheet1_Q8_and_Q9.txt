@@ -1,0 +1,17 @@
+Q8. What are the benefits of data field encapsulation?
+
+A: Helps in protecting variables and methods from outside interference and misuse, as the variables and the data of one class cannot be accessed in another class whereas that data can be used by the member functions of the same class.
+
+Q9. What is wrong with the following code?
+
+A: the code down below is corrected:
+
+public class Test {
+	private int id; 
+	public void m1() {
+ 		this.id = 45; 
+	} 
+	public void m2() { 
+		this.id = 45; //Corrected to this.id instead of Test.id, since variable id is not static, therefore must be called using the object and not the class name.
+	} 
+}
