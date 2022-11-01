@@ -1,0 +1,14 @@
+Q1.a
+
+false
+true
+true
+false
+
+b. It can be compiled.
+
+c. It can't be compiled.
+
+Correction:
+GeometricObject object = new Circle();
+Circle circle = (Circle)object;
